@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Muhammad Usman Ali</title>
 </head>
+
 <body>
-   
+
     <div id="header">
         <div class="container">
             <nav>
                 <a href="index.html" class="para">Usman Ali</a>
-              
+
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -22,12 +24,58 @@
                 </ul>
             </nav>
             <div class="header-text">
-                <h1>Hey, Iam <span>Usman Ali</span>  <br>a software engineer <br> from Pakistan</h1>
+                <h1>Hey, I'm <span>Usman Ali</span> <br>a Software Developer <br> from Pakistan</h1>
             </div>
         </div>
     </div>
-    <div class="headerimg">
+    <section class="headerimg">
         <img src="/Portfolio/images/MyLogo.png" alt="">
+    </section>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/Portfolio/images/Aboutimage.jpg" alt="">
+                </div>
+                <div class="about-col-1">
+                    <h1 class="sub">About Me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nisi quisquam quibusdam facere
+                        modi corrupti tempora, voluptate sequi sapiente, illo quaerat provident quidem expedita impedit
+                        soluta iste numquam consequuntur debitis ab, dolorem laudantium eaque?
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Apps</li>
+                            <li><span>UI/UX</span><br>Designing Apps</li>
+                            <li><span>UI/UX</span><br>Designing Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Feb 2024-Mar 2024</span><br>Web Development Intern @Coderscave</li>
+                            <li><span>Oct 2023-Nov 2023</span><br>Web Development Intern @Codsoft</li>
+                            <li><span>Sep 2023-Oct 2023</span><br>Web Development Intern @BehinDev</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Current</span><br>BSCS from FAST NUCES CFD</li>
+                            <li><span>2019-2021</span><br>Punjab College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    
+    <script src="test.js"></script>
 </body>
+
 </html>
