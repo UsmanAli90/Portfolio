@@ -16,13 +16,14 @@
             <nav>
                 <a href="index.html" class="para">Usman Ali</a>
 
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <h1>Hey, I'm <span>Usman Ali</span> <br>a Software Developer <br> from Pakistan</h1>
@@ -40,7 +41,7 @@
                     <img src="/Portfolio/images/Aboutimage.jpg" alt="">
                 </div>
                 <div class="about-col-1">
-                    <h1 class="sub">About Me</h1>
+                    <h1 class="title">About Me</h1>
                     <p>Hey, I'm Usman, and I'm passionate about crafting remarkable online experiences. As a Software
                         developer , my mission is to bring your ideas to life on the digital canvas. With a keen eye for
                         design and a knack for the latest web technologies, I'm committed to delivering websites that
@@ -56,7 +57,7 @@
                             <li><span>ReactJS</span><br>Crafting Frontend for
                                 Tomorrow's Web</li>
                             <li><span>Django</span><br>Powering Dynamic Web Applications.</li>
-                            <li><span>C++</span><br>Using C++</li>
+                            <li><span>MongoDB</span><br>Powering Web with MongoDB.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -121,8 +122,8 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>contact@gmail.com</p>
-                    <p><i class="fa-solid fa-phone-volume"></i>123-456-789</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>Usmanali04768@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>+92-3006634005</p>
                     <div class="social-icon">
                         <a href=""><i class="fa-brands fa-x-twitter"></i></a>
                         <a href="https://www.linkedin.com/in/muhammad-usman-ali-294701242/"><i
@@ -131,11 +132,12 @@
                     <a href="/Portfolio/images/CV.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form action="https://formspree.io/f/mnqezrzw" method="POST">
                         <input type="text" name="Name" placeholder="Your Name">
                         <input type="email" name="Email" placeholder="Your Email">
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
+                        <button type="reset" class="btn btn2">Reset</button>
                     </form>
                 </div>
             </div>
