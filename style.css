@@ -307,10 +307,11 @@ nav .fa-solid{
 }
 @media only screen and (max-width:600px){
     .headerimg img{
-        width: 250px;
+        /* width: 250px;
         position: relative;
         left: 70px;
-        top: -550px;
+        top: -550px; */
+        display: none;
     }
     .header-text{
         margin-top: 100%;
